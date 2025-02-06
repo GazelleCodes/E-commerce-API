@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail page</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/grid.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div class="navContainer">
+                <h2>Product Details</h2>
+                <div id="navBtn" class="nav-menu">
+                    <a href="#" class="btn">Home</a>
+                    <a href="#" class="btn">About</a>
+                    <a href="#" class="btn">Categories</a>
+                    <a href="#" class="btn">Login</a>
+                    <a href="#" class="btn">Register</a>
+                </div>
+            </div>
+            <div class="loader" id="loader"></div>
+            <div class="row" id="productContainer">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="column-content">
+                        <div class="row">
+                            <div id="largerImageContainer">
+                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="thumbnailsContainer">
+                                <div class="thumbnails">
+                                    <img src='${image}'>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="rating" id="rating">
+                            <span>Rating</span>
+                            <span>DiscountPercentage</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="column-content" id="columnContent">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="JS/nav.js"></script>
+    <script src="JS/detail.js"></script>
+</body>
+</html>

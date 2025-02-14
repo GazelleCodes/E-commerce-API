@@ -10,10 +10,12 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="container">
+        <header id="header">
             <div class="navContainer">
-                <h2>Gazelles</h2>
-
+                <div id="logo">
+                    <h2>Gazelles</h2>
+                </div>
+                
                 <!-- Hamburger Menu Button -->
                 <button class="hamburger" id="hamburgerBtn">☰</button>
                 
@@ -31,7 +33,11 @@
                     <a href="#" class="btn">Register</a>
                 </div>
             </div>
+        </header>
+        
+        <div id="container">
             <div class="loader" id="loader"></div>
+            <h2 class="all-products">All Products</h2>
             <div class="row" id="productContainer">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="column-content">
@@ -52,6 +58,7 @@
                     </div>
                 </div>
             </div>
+            <button id="viewMoreBtn" class="btn">View More</button>
         </div>
     </div>
 

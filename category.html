@@ -10,18 +10,32 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="container">
             <div class="navContainer">
-                <h2>Gazelles</h2>
-                <div id="navBtn" class="nav-menu" >
+                <div id="logo">
+                    <h2>Gazelles</h2>
+                </div>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburgerBtn">☰</button>
+                
+                <!-- Navigation Links -->
+                <div id="navBtn" class="nav-menu">
                     <a href="#" class="btn">Home</a>
                     <a href="#" class="btn">About</a>
-                    <a href="#" class="btn">Categories</a>
+                    <div class="dropdown">
+                        <a href="#" class="btn dropdown-btn">Categories ▼</a>
+                        <ul class="dropdown-menu" id="categoryList">
+                            <li><a href="#">Beauty</a></li>
+                        </ul>
+                    </div>
                     <a href="#" class="btn">Login</a>
                     <a href="#" class="btn">Register</a>
                 </div>
             </div>
+
+            <div id="container">
             <div class="loader" id="loader"></div>
+            <h2 class="all-categories">All Categories</h2>
             <div class="row" id="productContainer">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="column-content">
@@ -43,6 +57,7 @@
                 </div>
             </div>
         </div>
+    
     </div>
 
 

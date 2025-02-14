@@ -12,13 +12,17 @@
 }
 /* Basic Navigation Styling */
 .navContainer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: #333;
+    background: #000;
     color: white;
-    position: relative;
+    position: absolute;
+    top:0%;
+
+    
 }
 
 .nav-menu {
@@ -32,33 +36,81 @@
     padding: 10px 15px;
 }
 
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; 
+}
+
+
+
+.all-products{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+.all-categories{
+    font-size: 40px;
+    padding-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
 /* Hide the menu on small screens */
 @media (max-width: 768px) {
+
     .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: #545252;
-        position: absolute;
+        position: fixed;
         top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 10px;
-        border-radius: 5px;
+        left: -100%; /* Initially off-screen */
+        width: 250px;
+        height: auto;
+        background: #000;
+        flex-direction: column;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
     }
 
     .nav-menu.active {
-        display: flex;
+        left: 0; 
     }
 
     .hamburger {
         display: block;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 28px;
-        cursor: pointer;
     }
+
+    .all-products{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+    }
+
+    .all-categories{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+    }
+
+    
 }
+
 
 /* Show the menu normally on larger screens */
 @media (min-width: 769px) {
@@ -69,7 +121,19 @@
     .nav-menu {
         display: flex !important;
     }
+
+
+    #header {
+        background: url("../images/banner1.webp") no-repeat center center/cover;
+        display: block;
+        padding: 280px 0;
+        transition: background-image 1s ease-in-out;
+    }
+   
 }
+
+
+
 .navContainer>h2{
     padding-bottom: 30px;
     font-size: 28px;

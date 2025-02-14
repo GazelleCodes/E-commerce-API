@@ -9,7 +9,8 @@ fetch("https://dummyjson.com/products").then(response=>{
     }
 }).then(data=>{
     console.log(data["products"])
-    data["products"].forEach(product=>{
+    const limitedProducts = data["products"].slice(0, 8);
+    limitedProducts.forEach(product=>{
         const newTitle = product.title.substr(0,20);
         productContainer.innerHTML+=`
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -31,7 +32,27 @@ fetch("https://dummyjson.com/products").then(response=>{
                         </div>
                     </div>
                 </div>
+            
         `
     })
     loader.classList.add("hide");
 })
+
+
+const header = document.getElementById("header");
+
+// Array of background images
+const images = [
+    "../images/banner1.webp",
+    "../images/banner2.webp",
+    "../images/banner3.webp"
+];
+
+// Function to change background image randomly
+function changeBackground() {
+    const randomImage = Math.floor(Math.random() * images.length);
+    header.style.backgroundImage = `url('${images[randomImage]}')`;
+}
+
+// Change background every 3 seconds
+setInterval(changeBackground, 3000);

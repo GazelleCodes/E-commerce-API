@@ -9,17 +9,36 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="container">
-            <div class="navContainer">
-                <h2>Product Details</h2>
-                <div id="navBtn" class="nav-menu">
-                    <a href="#" class="btn">Home</a>
-                    <a href="#" class="btn">About</a>
-                    <a href="#" class="btn">Categories</a>
-                    <a href="#" class="btn">Login</a>
-                    <a href="#" class="btn">Register</a>
+        <header class="header">
+            <div class="overlay">
+                <div class="navContainer">
+                    <div id="logo">
+                        <h2>Gazelles</h2>
+                    </div>
+                    
+                    <!-- Hamburger Menu Button -->
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                    
+                    <!-- Navigation Links -->
+                    <div id="navBtn" class="nav-menu nav-menu-btn">
+                        <a href="#" class="btn">Home</a>
+                        <a href="#" class="btn">About</a>
+                        <div class="dropdown">
+                            <a href="#" class="btn dropdown-btn">Categories ▼</a>
+                            <ul class="dropdown-menu" id="categoryList">
+                                <li><a href="#">Beauty</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn">Login</a>
+                        <a href="#" class="btn">Register</a>
+                    </div>
+                    <div class="overlay-title">
+                        <h2>Red Nail Polish</h2>
+                    </div>
                 </div>
             </div>
+        </header>
+        <div id="container">
             <div class="loader" id="loader"></div>
             <div class="row" id="productContainer">
                 <div class="col-xs-12 col-sm-6">

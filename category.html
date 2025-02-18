@@ -10,32 +10,39 @@
 </head>
 <body>
     <div id="wrapper">
-            <div class="navContainer">
-                <div id="logo">
-                    <h2>Gazelles</h2>
-                </div>
-                
-                <!-- Hamburger Menu Button -->
-                <button class="hamburger" id="hamburgerBtn">☰</button>
-                
-                <!-- Navigation Links -->
-                <div id="navBtn" class="nav-menu">
-                    <a href="#" class="btn">Home</a>
-                    <a href="#" class="btn">About</a>
-                    <div class="dropdown">
-                        <a href="#" class="btn dropdown-btn">Categories ▼</a>
-                        <ul class="dropdown-menu" id="categoryList">
-                            <li><a href="#">Beauty</a></li>
-                        </ul>
+        <header class="header">
+            <div class="overlay">
+                <div class="navContainer">
+                    <div id="logo">
+                        <h2>Gazelles</h2>
                     </div>
-                    <a href="#" class="btn">Login</a>
-                    <a href="#" class="btn">Register</a>
+                    
+                    <!-- Hamburger Menu Button -->
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                    
+                    <!-- Navigation Links -->
+                    <div id="navBtn" class="nav-menu nav-menu-btn">
+                        <a href="#" class="btn">Home</a>
+                        <a href="#" class="btn">About</a>
+                        <div class="dropdown">
+                            <a href="#" class="btn dropdown-btn">Categories ▼</a>
+                            <ul class="dropdown-menu" id="categoryList">
+                                <li><a href="#">Beauty</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn">Login</a>
+                        <a href="#" class="btn">Register</a>
+                    </div>
+                    <div class="overlay-title">
+                        <h2>Product Categories</h2>
+                    </div>
                 </div>
             </div>
+        </header>
+    
 
             <div id="container">
             <div class="loader" id="loader"></div>
-            <h2 class="all-categories">All Categories</h2>
             <div class="row" id="productContainer">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="column-content">

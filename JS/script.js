@@ -56,3 +56,6 @@ function changeBackground() {
 
 // Change background every 3 seconds
 setInterval(changeBackground, 3000);
+
+
+

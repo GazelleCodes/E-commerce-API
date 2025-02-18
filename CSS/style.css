@@ -45,27 +45,17 @@
     display: none; 
 }
 
-
-
 .all-products{
-    font-size: 40px;
-    font-weight: bold;
-    padding-top: 50px;
+    text-decoration: none;
+    color: #000;
     text-align: center;
-    margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
+    font-size: 40px;
+    padding-top: 10px;
+   
 }
 
-.all-categories{
-    font-size: 40px;
-    padding-top: 50px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-}
+
+
 
 /* Hide the menu on small screens */
 @media (max-width: 768px) {
@@ -90,23 +80,9 @@
         display: block;
     }
 
-    .all-products{
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        display: block;
-    }
 
-    .all-categories{
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        display: block;
-    }
+
+    
 
     
 }
@@ -126,9 +102,98 @@
     #header {
         background: url("../images/banner1.webp") no-repeat center center/cover;
         display: block;
-        padding: 280px 0;
         transition: background-image 1s ease-in-out;
     }
+
+    .header{
+        background: url("../images/banner1.webp") no-repeat center center/cover;
+        display: block;
+    }
+
+    .overlay{
+        background-color: rgba(0,0,0,0.7);
+        padding: 180px 0;
+        position: relative;
+        display: block;
+        top: 0;
+    
+    }
+
+    #overlay{
+        background-color: rgba(0,0,0,0.4);
+        padding: 280px 0;
+        position: relative;
+        display: block;
+        top: 0;
+    
+    }
+
+    .overlay-title>h2{
+        position: absolute;
+        color: #fff;
+        top: 170px;
+        right: 500px; 
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    #overlay-title>h2{
+        position: absolute;
+        text-align: center;
+        align-content: center;
+        color: #fff;
+        top: 250px;
+        right: 300px; 
+        font-size: 35px;
+        font-style: italic;
+    }
+
+    .nav-menu-btn{
+        position: absolute;
+        right:10px ;
+    }
+
+    .search-container {
+        position: relative;
+        right: 80px;
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    
+    #searchInput {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    #suggestions {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        background:#000;
+        border: 1px solid #ccc;
+        max-height: 200px;
+        overflow-y: auto;
+        display: none;
+        border-radius: 5px;
+    }
+    
+    .suggestion-item {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .suggestion-item:hover {
+        background: #f0f0f0;
+    }
+
+    .fa-magnifying-glass{
+        color: #000;
+    }
+    
    
 }
 
